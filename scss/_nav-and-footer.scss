@@ -91,7 +91,7 @@
 }
 
 .foot-contact {
-    color: #fff;
+    color: $color-text-white;
     text-decoration: solid;
     display: flex;
     align-items: center;
@@ -103,12 +103,14 @@
     display: flex;
     margin: 15px;
     justify-content: center;
+    a{
+        svg{
+            color: $color-principal;
+            margin: 10px;
+            width: 40px;
+            height: 40px;
+            margin-bottom: 25px;
+        }
+    }
   }
   
-  .foot-icon a svg {
-    color: rgb(233, 86, 7);
-    margin: 10px;
-    width: 40px;
-    height: 40px;
-    margin-bottom: 25px;
-  }

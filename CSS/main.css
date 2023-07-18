@@ -100,7 +100,7 @@ body {
 }
 
 .foot-contact {
-  color: #fff;
+  color: rgb(250, 250, 250);
   text-decoration: solid;
   display: flex;
   align-items: center;
@@ -113,9 +113,8 @@ body {
   margin: 15px;
   justify-content: center;
 }
-
 .foot-icon a svg {
-  color: rgb(233, 86, 7);
+  color: rgba(233, 86, 7, 0.7);
   margin: 10px;
   width: 40px;
   height: 40px;
