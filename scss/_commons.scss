@@ -1,0 +1,10 @@
+*{
+    box-sizing: border-box;
+    font-family: $text-font; 
+}
+body{
+    background: $background-principal;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+}
