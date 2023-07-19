@@ -1,0 +1,125 @@
+.contact-form-main{
+    margin-top: 96.34px;
+    h1{
+        text-align: center;
+        background-image: $background-tittles;
+        color: $color-text-white;
+        padding: 15px;
+        font-size: 60px;
+        text-shadow: $text-shadow-black;
+    }
+}
+.contact-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-image: linear-gradient(45deg, #330808, 
+    #3a2c09);
+    border-radius: 2.5em;
+    padding: 50px;
+    width: 70%;
+    height: 70%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    &::before{
+        content: '';
+        background-image: linear-gradient(45deg, #ff0000, 
+        #ffb700);
+        height: 358px;
+        width: 309px;
+        position: absolute;
+        margin-top: -34px;
+        margin-left: px;
+        z-index: -1;
+        border-radius: 2.7em;
+    }
+
+}
+
+.contact-form-button {
+    margin-top: 10px;
+    font-size: 17px;
+    background: $color-principal;
+    color: $color-text-black;
+    padding: 0.7em 5.5em;
+    display: flex;
+    align-items: center;
+    border: 2px solid #66da4300;
+    border-radius: 5em;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+    &:hover { 
+        border: 2px solid $color-principal;
+        background: $color-text-black;
+        color: $color-principal;
+    }
+    &:active{
+        border: 2px solid #66da4300;
+        background: $color-principal;
+        color: $color-text-black;
+    }
+}
+
+.contact-form-input {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #66da4300;
+    border-bottom: 1px solid $color-principal;
+    outline: none;
+    background-color: transparent;
+    color: $color-principal;
+    transition: 0.2s;
+    &:focus {
+        border: 1px solid #66da4300;
+        border-bottom: 1px solid $color-principal;
+        background-color: transparent;
+        color: rgb(211, 95, 0);
+    }
+    &::placeholder {
+        color: rgb(155, 114, 91);  
+    }
+}
+//sacar boton de incremento y decremento en input number
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.contact-form-textarea {
+    width: calc(100% - 10px);
+    padding: 8px;
+    height: 100px;
+    margin-bottom: 20px;
+    border: 1px solid #66da4300;
+    border-bottom: 1px solid $color-principal;
+    outline: none;
+    background-color: transparent;
+    color: $color-principal;
+    &::placeholder{
+        color: #9b725b;
+    }
+    &:focus {
+        border: 1px solid #66da4300;
+        border-bottom: 1px solid $color-principal;
+        background-color: transparent;
+        color: $color-principal;
+    }
+}
+
+
+
+//RESPONSIVE 
+@media (width < 500px){
+    .contact-form-main h1 {
+        font-size: 30px;
+    }
+    .contact-form {
+        width: 100%;   
+    }
+}
+

@@ -1,4 +1,7 @@
-node_modules/
 *.ia
 *.map
 *.vscode
+*.log
+node_modules/
+fuentes/
+envio.php

@@ -114,3 +114,17 @@
     }
   }
   
+
+  //RESPONSIVE 
+  @media (width < 700px){
+    .foot-menu ul {
+        flex-direction: column;
+    }
+    .foot-contact {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .foot-icon {
+        margin: -5px;
+    }
+}
