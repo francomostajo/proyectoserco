@@ -336,6 +336,12 @@ body {
   text-align: center;
 }
 
+@media (width < 500px) {
+  .history-serco img {
+    width: 100px;
+    height: 100px;
+  }
+}
 .sucursales {
   display: grid;
   grid-template-columns: 1fr;

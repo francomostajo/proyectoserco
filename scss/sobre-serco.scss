@@ -38,3 +38,15 @@
         text-align: center;
     }
 }
+
+
+//RESPONSIVE
+@media (width < 500px) {
+.history-serco {
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}
+}
+
