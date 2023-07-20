@@ -295,54 +295,167 @@ body {
     margin-bottom: 10px;
   }
 }
-/*body {
-    margin: 0;
-    padding: 0;
-  }
+.service-conteiner {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "tittle tittle tittle" "description description service2" "service1 service1 service2" "service3 service4 service5";
+}
 
-  main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  p {
-    text-align: justify;
-    margin-bottom: 20px;
-  }
-  img {
-    display: block;
-    max-width: 100%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-  .service-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-  }
+.service-conteiner h1 {
+  background-image: linear-gradient(45deg, #330808, rgba(233, 86, 7, 0.7));
+  margin-top: 96.34px;
+  text-align: center;
+  font-size: 50px;
+  color: rgb(250, 250, 250);
+  width: 100%;
+  grid-area: tittle;
+}
+.service-conteiner h2 {
+  color: rgb(8, 8, 8);
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 0 0 10px rgba(0, 0, 0, 0.8);
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.service-conteiner h3 {
+  text-align: center;
+  font-style: italic;
+  color: rgb(250, 250, 250);
+  text-shadow: 1px 1px rgba(233, 86, 7, 0.7);
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+}
+.service-conteiner p {
+  padding: 10px 0 10px 10px;
+  font-size: 16px;
+  line-height: 35px;
+  font-weight: bold;
+}
 
-article {
-    border: 1px solid #ccc;
-    padding: 20px;
-  }
+.tittle-service {
+  background-color: rgba(39, 39, 39, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 1px 1px 20px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 13px;
+  margin: 25px;
+  padding: 20px;
+  place-items: center;
+  grid-area: description;
+}
+.tittle-service img {
+  height: 50%;
+  clip-path: circle();
+  width: 50%;
+}
 
-  h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
+.service-1 {
+  background-color: rgba(39, 39, 39, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 1px 1px 20px black;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  border-radius: 13px;
+  margin: 25px;
+  padding: 20px;
+  place-items: center;
+  grid-area: service1;
+}
+.service-1 img {
+  height: 100%;
+  clip-path: circle();
+  width: 100%;
+}
 
-  h3 {
-    font-size: 16px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
+.service-2 {
+  background-color: rgba(39, 39, 39, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 1px 1px 20px black;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  border-radius: 13px;
+  margin: 25px;
+  padding: 20px;
+  place-items: center;
+  grid-area: service2;
+}
+.service-2 img {
+  height: 100%;
+  clip-path: circle();
+  width: 100%;
+}
 
-  li {
-    margin-bottom: 5px;}*/
+.service-3 {
+  background-color: rgba(39, 39, 39, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 1px 1px 20px black;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  border-radius: 13px;
+  margin: 25px;
+  padding: 20px;
+  place-items: center;
+  grid-area: service3;
+}
+.service-3 img {
+  height: 100%;
+  clip-path: circle();
+  width: 100%;
+}
+
+.service-4 {
+  background-color: rgba(39, 39, 39, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 1px 1px 20px black;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  border-radius: 13px;
+  margin: 25px;
+  padding: 20px;
+  place-items: center;
+  grid-area: service4;
+}
+.service-4 img {
+  height: 100%;
+  clip-path: circle();
+  width: 100%;
+}
+
+.service-5 {
+  background-color: rgba(39, 39, 39, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 1px 1px 20px black;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  border-radius: 13px;
+  margin: 25px;
+  padding: 20px;
+  place-items: center;
+  grid-area: service5;
+}
+.service-5 img {
+  height: 100%;
+  clip-path: circle();
+  width: 100%;
+}
+
 .container-serco h1 {
   margin-top: 96.34px;
   background-image: linear-gradient(45deg, #330808, rgba(233, 86, 7, 0.7));
