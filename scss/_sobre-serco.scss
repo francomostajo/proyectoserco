@@ -1,10 +1,6 @@
 .container-serco {
     h1{
-        margin-top: 96.34px;
-        background-image: $background-tittles;
-        text-align: center;
-        font-size: 30px;
-        color: $color-text-white;
+      @extend .tittle-general;
     }
 }
 .history-serco{

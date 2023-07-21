@@ -1,13 +1,8 @@
 .contact-form-main{
     margin-top: 96.34px;
     h1{
-        text-align: center;
-        background-image: $background-tittles;
-        color: $color-text-white;
-        padding: 15px;
-        font-size: 60px;
-        text-shadow: $text-shadow-black;
-    }
+        @extend .tittle-general;
+      }
 }
 .contact-form {
     display: flex;

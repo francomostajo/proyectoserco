@@ -8,12 +8,7 @@
             "sucu2"
             "sucu3";
         h1{
-            margin-top: 96.34px;
-            background-image: $background-tittles;
-            text-align: center;
-            font-size: 30px;
-            color: $color-text-white;
-            grid-area: title;
+                @extend .tittle-general;
         }
         h2{
             color: $color-text-black;

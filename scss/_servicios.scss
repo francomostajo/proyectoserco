@@ -1,48 +1,43 @@
 .service-conteiner {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
     "tittle tittle tittle"
-    "description description service2"
-    "service1 service1 service2"
-    "service3 service4 service5";
+    "description description description"
+    "service12 service12 service12"
+    "service3 service4 service5"
+    ;
 }
 .service-conteiner {
     h1{
-    background-image: $background-tittles;
-    margin-top: 96.34px;
-    text-align: center;
-    font-size: 50px;
-    color: $color-text-white;
-    width: 100%;
-    grid-area: tittle;
-}
-
-h2{
-    color: $color-text-black;
-    text-align: center;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px $text-shadow-black;
-    font-size: 40px;
-    letter-spacing: 2px;
-    font-weight: $text-weight-bold; 
-}
-h3{
-    text-align: center;
-    font-style: italic;
-    color: $color-text-white;
-    text-shadow: 1px 1px  $color-principal;
-    padding-bottom: 5px;
-    margin-bottom: 40px;
-}
-p{
-    padding: 10px 0 10px 10px;
-    font-size: 16px;
-    line-height: 35px;
-    font-weight: bold;
-}
+        @extend .tittle-general;
+        grid-area: tittle;
+    }
+    h2{
+        color: $color-text-black;
+        text-align: center;
+        margin-bottom: 20px;
+        text-shadow: 1px 1px $text-shadow-black;
+        font-size: 40px;
+        letter-spacing: 2px;
+        font-weight: $text-weight-bold; 
+    }
+    h3{
+        text-align: center;
+        font-style: italic;
+        color: $color-text-white;
+        text-shadow: 1px 1px  $color-principal;
+        padding-bottom: 5px;
+        margin-bottom: 40px;
+    }
+    p{
+        padding: 10px 0 10px 10px;
+        font-size: 16px;
+        line-height: 35px;
+        font-weight: bold;
+    }
 }
 .tittle-service {
     background-color: rgb(39, 39, 39, 0.3);
@@ -50,19 +45,17 @@ p{
     -webkit-backdrop-filter: blur(5px);
     box-shadow: 1px 1px 20px black;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     border-radius: 13px;
     margin: 25px;
     padding: 20px;
     place-items: center;
-    img {
-        height: 50%;
-        clip-path: circle();
-        width: 50%;
-    }
     grid-area: description;
 } 
+.service-1-2{
+    grid-area: service12;
+}
 .service-1 {
     background-color: rgba(39, 39, 39, 0.3);
     backdrop-filter: blur(5px);
@@ -76,11 +69,6 @@ p{
     padding: 20px;
     place-items: center;
     grid-area: service1;
-    img {
-        height: 100%;
-        clip-path: circle();
-        width: 100%;
-    }
 }
   
 .service-2 {
@@ -96,11 +84,6 @@ p{
     padding: 20px;
     place-items: center;
     grid-area: service2;
-    img {
-        height: 100%;
-        clip-path: circle();
-        width: 100%;
-    }
 }
   
 .service-3 {
@@ -116,11 +99,6 @@ p{
     padding: 20px;
     place-items: center;
     grid-area: service3;
-    img {
-        height: 100%;
-        clip-path: circle();
-        width: 100%;
-    }
 }
   
 .service-4 {
@@ -136,11 +114,7 @@ p{
     padding: 20px;
     place-items: center;
     grid-area: service4;
-    img {
-        height: 100%;
-        clip-path: circle();
-        width: 100%;
-    }
+
 }
   
 .service-5 {
@@ -156,9 +130,5 @@ p{
     padding: 20px;
     place-items: center;
     grid-area: service5; 
-    img {
-        height: 100%;
-        clip-path: circle();
-        width: 100%;
-    }
+
 }
