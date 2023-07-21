@@ -1,14 +1,16 @@
 .service-conteiner {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-    "tittle tittle tittle"
-    "description description description"
-    "service12 service12 service12"
-    "service3 service4 service5"
-    ;
+    "tittle"
+    "description"
+    "service1"
+    "service2"
+    "service3"
+    "service4"
+    "service5";
 }
 .service-conteiner {
     h1{
@@ -18,7 +20,6 @@
     h2{
         color: $color-text-black;
         text-align: center;
-        margin-bottom: 20px;
         text-shadow: 1px 1px $text-shadow-black;
         font-size: 40px;
         letter-spacing: 2px;
@@ -29,11 +30,8 @@
         font-style: italic;
         color: $color-text-white;
         text-shadow: 1px 1px  $color-principal;
-        padding-bottom: 5px;
-        margin-bottom: 40px;
     }
     p{
-        padding: 10px 0 10px 10px;
         font-size: 16px;
         line-height: 35px;
         font-weight: bold;
@@ -121,3 +119,41 @@
     grid-area: service5; 
 
 }
+
+
+@media (width < 800px){
+    .service-conteiner h1 {
+        font-size: 30px;
+    }
+}@media (width < 600px){
+    .service-conteiner { 
+        h1 {
+        font-size: 25px;
+        margin-top: 96.34px;
+        } 
+        h2{
+            font-size: 20px;
+        } 
+        h3{
+            font-size: 20px;
+        } 
+        p{
+            font-size: 15px;            
+        }
+        .service-1{
+            flex-direction: column-reverse ;
+        } 
+        .service-2{
+            flex-direction: column-reverse ;
+        } 
+        .service-3{
+            flex-direction: column-reverse ;
+        }
+        .service-4{
+            flex-direction: column-reverse ;
+        }
+        .service-5{
+            flex-direction: column-reverse ;
+        }
+    }
+    }
