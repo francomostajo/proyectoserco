@@ -768,6 +768,7 @@ input[type=number]::-webkit-outer-spin-button {
   border: 1px solid rgba(102, 218, 67, 0);
   border-bottom: 1px solid rgb(233, 86, 7);
   outline: none;
+  resize: none;
   background-color: transparent;
   color: rgb(233, 86, 7);
 }

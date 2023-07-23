@@ -93,6 +93,7 @@ input[type="number"]::-webkit-outer-spin-button {
     border: 1px solid #66da4300;
     border-bottom: 1px solid $color-principal;
     outline: none;
+    resize: none;
     background-color: transparent;
     color: $color-principal;
     &::placeholder{
