@@ -23,7 +23,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(233, 86, 7, 0.7);
+  background-color: rgba(39, 39, 39, 0.8);
   width: 100%;
   z-index: 99;
 }
@@ -40,7 +40,7 @@ body {
 }
 .nav-menu li a {
   text-decoration: none;
-  color: rgb(250, 250, 250);
+  color: rgba(233, 86, 7, 0.7);
   margin: 10px;
   letter-spacing: 1px;
   font-size: 18px;
@@ -48,25 +48,25 @@ body {
   transition: all 0.2s ease;
 }
 .nav-menu li a:hover {
-  color: rgb(39, 39, 39);
+  color: rgba(233, 86, 7, 0.7);
   transform: scale(1.15);
   letter-spacing: 0.5px;
 }
 
 .nav-menu .dropdown-custom {
-  background-color: rgba(39, 39, 39, 0.8);
+  background-color: rgba(233, 86, 7, 0.7);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
 .nav-menu .dropdown-custom li a {
-  color: rgb(250, 250, 250);
+  color: rgba(39, 39, 39, 0.8);
   letter-spacing: 1.5px;
   font-weight: bold;
   max-width: auto;
   text-align: center;
 }
 .nav-menu .dropdown-custom li a:hover {
-  background-color: rgba(233, 86, 7, 0.7);
+  background-color: rgb(250, 250, 250);
 }
 
 .foot-container {
@@ -76,7 +76,7 @@ body {
   justify-content: space-around;
   flex-direction: column-reverse;
   flex-wrap: wrap;
-  background-color: rgb(39, 39, 39);
+  background-color: rgba(39, 39, 39, 0.8);
   padding: 0;
   margin: 0;
 }
@@ -84,7 +84,7 @@ body {
 .foot-menu ul {
   display: flex;
   justify-content: center;
-  font-weight: rgb(39, 39, 39);
+  font-weight: rgba(39, 39, 39, 0.8);
   align-items: center;
   margin: 10px 10px 10px 10px;
 }
@@ -256,7 +256,7 @@ body {
   opacity: 0;
 }
 
-@media (width < 700px) {
+@media (width < 750px) {
   .gif-serco {
     width: 100%;
   }
@@ -294,13 +294,16 @@ body {
     font-size: 25px;
   }
   .main-reco h2 {
-    font-size: 20px;
+    text-align: start;
+    background-color: rgba(74, 74, 74, 0.5);
+    color: rgb(250, 250, 250);
+    padding: 15px;
+    font-size: 35px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   }
   .main-reco img {
     width: 100%;
     height: auto;
-    margin-bottom: 10px;
-    display: flex;
   }
 }
 .service-conteiner {
@@ -573,7 +576,7 @@ body {
 
 .btn-ubic {
   padding: 15px 30px;
-  background-color: rgb(39, 39, 39);
+  background-color: rgba(39, 39, 39, 0.8);
   border: none;
   text-decoration: none;
   margin: auto;
@@ -759,7 +762,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 30px;
   }
   .contact-form {
-    width: 100%;
+    width: 80%;
   }
 }
 

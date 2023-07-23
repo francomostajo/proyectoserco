@@ -121,7 +121,7 @@
 
 
 //RESPONSIVE
-@media (width <700px) {
+@media (width <750px) {
     .gif-serco {
         width: 100%;
     } 
@@ -151,26 +151,30 @@
     }
 
     .main-btn a{
-            justify-content: space-evenly;
-            margin: 20px 10px 0 10px;
-            font-size: 15px;
-        } 
+        justify-content: space-evenly;
+        margin: 20px 10px 0 10px;
+        font-size: 15px;
+    } 
     .main-text-description{
         margin-top: 15px;
         font-size: 25px;
     }
-    .main-reco {
+    .main-reco{
         h2{
-            font-size: 20px;
+            text-align: start;
+            background-color: rgba(74, 74, 74, 0.5); 
+            color: $color-text-white;
+            padding: 15px;
+            font-size: 35px;
+            text-shadow: $text-shadow-black;
         }
         img{
-            width: 100%;
+            width: 100%; 
             height: auto;
-            margin-bottom: 10px;
-            display: flex;
         }
     }
 }
+ 
 
 
 
