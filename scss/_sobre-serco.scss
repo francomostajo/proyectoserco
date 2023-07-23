@@ -54,9 +54,6 @@
 }
 
 @media (width < 380px) {
-    .container-serco-carousel-aside{
-        flex-direction: column;
-    }
     .history-serco{
         display: flex;
         margin: 0%;
@@ -72,7 +69,7 @@
             width: 100px;
             height: 100px;
         }
-        }
+    }
     .container-serco-carousel-aside {
         display: flex;
         flex-direction: column;

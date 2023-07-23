@@ -40,7 +40,7 @@ body {
 }
 .nav-menu li a {
   text-decoration: none;
-  color: rgba(233, 86, 7, 0.7);
+  color: rgb(233, 86, 7);
   margin: 10px;
   letter-spacing: 1px;
   font-size: 18px;
@@ -48,13 +48,13 @@ body {
   transition: all 0.2s ease;
 }
 .nav-menu li a:hover {
-  color: rgba(233, 86, 7, 0.7);
+  color: rgb(233, 86, 7);
   transform: scale(1.15);
   letter-spacing: 0.5px;
 }
 
 .nav-menu .dropdown-custom {
-  background-color: rgba(233, 86, 7, 0.7);
+  background-color: rgb(233, 86, 7);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
@@ -102,7 +102,7 @@ body {
   display: flex;
 }
 .foot-menu ul li a:hover {
-  color: rgba(233, 86, 7, 0.7);
+  color: rgb(233, 86, 7);
   transform: scale(1.15);
   letter-spacing: 1.5px;
 }
@@ -122,7 +122,7 @@ body {
   justify-content: center;
 }
 .foot-icon a svg {
-  color: rgba(233, 86, 7, 0.7);
+  color: rgb(233, 86, 7);
   margin: 10px;
   width: 40px;
   height: 40px;
@@ -251,7 +251,7 @@ body {
   transition: all 0.3s;
 }
 .main-container .main-btn li a:hover::after {
-  background-color: rgba(233, 86, 7, 0.7);
+  background-color: rgb(233, 86, 7);
   transform: scaleX(1.4) scaleY(1.5);
   opacity: 0;
 }
@@ -329,7 +329,7 @@ body {
   text-align: center;
   font-style: italic;
   color: rgb(250, 250, 250);
-  text-shadow: 1px 1px rgba(233, 86, 7, 0.7);
+  text-shadow: 1px 1px rgb(233, 86, 7);
 }
 .service-conteiner p {
   font-size: 16px;
@@ -498,9 +498,6 @@ body {
   }
 }
 @media (width < 380px) {
-  .container-serco-carousel-aside {
-    flex-direction: column;
-  }
   .history-serco {
     display: flex;
     margin: 0%;
@@ -555,7 +552,7 @@ body {
   text-align: center;
   font-style: italic;
   color: rgb(250, 250, 250);
-  text-shadow: 1px 1px rgba(233, 86, 7, 0.7);
+  text-shadow: 1px 1px rgb(233, 86, 7);
   padding-bottom: 5px;
   margin-bottom: 40px;
 }
@@ -714,7 +711,7 @@ body {
 .contact-form-button {
   margin-top: 10px;
   font-size: 17px;
-  background: rgba(233, 86, 7, 0.7);
+  background: rgb(233, 86, 7);
   color: rgb(8, 8, 8);
   padding: 0.7em 5.5em;
   display: flex;
@@ -726,13 +723,13 @@ body {
   cursor: pointer;
 }
 .contact-form-button:hover {
-  border: 2px solid rgba(233, 86, 7, 0.7);
+  border: 2px solid rgb(233, 86, 7);
   background: rgb(8, 8, 8);
-  color: rgba(233, 86, 7, 0.7);
+  color: rgb(233, 86, 7);
 }
 .contact-form-button:active {
   border: 2px solid rgba(102, 218, 67, 0);
-  background: rgba(233, 86, 7, 0.7);
+  background: rgb(233, 86, 7);
   color: rgb(8, 8, 8);
 }
 
@@ -741,15 +738,15 @@ body {
   padding: 8px;
   margin-bottom: 20px;
   border: 1px solid rgba(102, 218, 67, 0);
-  border-bottom: 1px solid rgba(233, 86, 7, 0.7);
+  border-bottom: 1px solid rgb(233, 86, 7);
   outline: none;
   background-color: transparent;
-  color: rgba(233, 86, 7, 0.7);
+  color: rgb(233, 86, 7);
   transition: 0.2s;
 }
 .contact-form-input:focus {
   border: 1px solid rgba(102, 218, 67, 0);
-  border-bottom: 1px solid rgba(233, 86, 7, 0.7);
+  border-bottom: 1px solid rgb(233, 86, 7);
   background-color: transparent;
   color: rgb(211, 95, 0);
 }
@@ -769,19 +766,19 @@ input[type=number]::-webkit-outer-spin-button {
   height: 100px;
   margin-bottom: 20px;
   border: 1px solid rgba(102, 218, 67, 0);
-  border-bottom: 1px solid rgba(233, 86, 7, 0.7);
+  border-bottom: 1px solid rgb(233, 86, 7);
   outline: none;
   background-color: transparent;
-  color: rgba(233, 86, 7, 0.7);
+  color: rgb(233, 86, 7);
 }
 .contact-form-textarea::placeholder {
   color: #9b725b;
 }
 .contact-form-textarea:focus {
   border: 1px solid rgba(102, 218, 67, 0);
-  border-bottom: 1px solid rgba(233, 86, 7, 0.7);
+  border-bottom: 1px solid rgb(233, 86, 7);
   background-color: transparent;
-  color: rgba(233, 86, 7, 0.7);
+  color: rgb(233, 86, 7);
 }
 
 @media (width < 500px) {
