@@ -64,10 +64,9 @@
         text-shadow: $text-shadow-black;
     }
     img{
-        width: 50%; 
+        width: 100%; 
         height: auto;
-        display: block;
-        margin: 0 auto 20px;
+        margin: 5px;
     }
 }
  //button 
@@ -165,9 +164,10 @@
             font-size: 20px;
         }
         img{
-            width: 80%;
+            width: 100%;
             height: auto;
             margin-bottom: 10px;
+            display: flex;
         }
     }
 }

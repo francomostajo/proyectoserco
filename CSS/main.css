@@ -207,10 +207,9 @@ body {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 .main-reco img {
-  width: 50%;
+  width: 100%;
   height: auto;
-  display: block;
-  margin: 0 auto 20px;
+  margin: 5px;
 }
 
 .main-container .main-btn {
@@ -298,9 +297,10 @@ body {
     font-size: 20px;
   }
   .main-reco img {
-    width: 80%;
+    width: 100%;
     height: auto;
     margin-bottom: 10px;
+    display: flex;
   }
 }
 .service-conteiner {
@@ -336,10 +336,6 @@ body {
 
 .tittle-service {
   grid-area: description;
-}
-
-.service-1-2 {
-  grid-area: service12;
 }
 
 .service-1 {
