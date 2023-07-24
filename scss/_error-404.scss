@@ -1,0 +1,19 @@
+.error-404-container{
+    h1{
+        @extend .tittle-general;
+    }
+    p {
+       @extend .p-general;
+       text-align: center;
+    }
+}
+.btn-404-gral {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 20%;
+    .btn-404{
+        @extend .btn-general;
+    }
+}

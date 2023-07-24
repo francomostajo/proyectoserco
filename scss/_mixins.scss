@@ -6,7 +6,32 @@
     font-size: 60px;
     color: $color-text-white;
 }
-
+.p-general {
+    padding: 10px 0 10px 10px;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: $text-weight-bold;
+}
+.btn-general {
+    padding: 15px 30px;
+    background-color: $color-footer-background;
+    border: none;
+    text-decoration: none;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 28px;
+    width: 30%;
+    transition: 0s;
+    color: $color-text-white;
+    letter-spacing: 1px;
+    display: block;
+    text-align: center;
+    &:hover {
+        background-image: $background-tittles;
+        box-shadow: 0 0 10px rgb(246, 246, 246), 0 0 20px rgb(219, 136, 47), 0 0 50px rgb(246, 164, 31);
+        color: $color-text-white;
+    }
+}
 //mixins
 @mixin backgroundgral ($flex,$just,$place) {
     display: flex;

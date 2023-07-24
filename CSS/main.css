@@ -11,11 +11,39 @@ body {
   background-attachment: fixed;
 }
 
-.tittle-general, .contact-form-main h1, .sucursales h1, .container-serco h1, .service-conteiner h1 {
+.tittle-general, .error-404-container h1, .contact-form-main h1, .sucursales h1, .container-serco h1, .service-conteiner h1 {
   margin-top: 96.34px;
-  background-image: linear-gradient(45deg, #330808, rgba(233, 86, 7, 0.7));
+  background-image: linear-gradient(90deg, rgba(39, 39, 39, 0.8), rgba(233, 86, 7, 0.85));
   text-align: center;
   font-size: 60px;
+  color: rgb(250, 250, 250);
+}
+
+.p-general, .error-404-container p {
+  padding: 10px 0 10px 10px;
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: bold;
+}
+
+.btn-general, .btn-404-gral .btn-404 {
+  padding: 15px 30px;
+  background-color: rgba(39, 39, 39, 0.8);
+  border: none;
+  text-decoration: none;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 28px;
+  width: 30%;
+  transition: 0s;
+  color: rgb(250, 250, 250);
+  letter-spacing: 1px;
+  display: block;
+  text-align: center;
+}
+.btn-general:hover, .btn-404-gral .btn-404:hover {
+  background-image: linear-gradient(90deg, rgba(39, 39, 39, 0.8), rgba(233, 86, 7, 0.85));
+  box-shadow: 0 0 10px rgb(246, 246, 246), 0 0 20px rgb(219, 136, 47), 0 0 50px rgb(246, 164, 31);
   color: rgb(250, 250, 250);
 }
 
@@ -40,7 +68,7 @@ body {
 }
 .nav-menu li a {
   text-decoration: none;
-  color: rgb(233, 86, 7);
+  color: rgb(250, 250, 250);
   margin: 10px;
   letter-spacing: 1px;
   font-size: 18px;
@@ -195,7 +223,7 @@ body {
   margin-top: 15px;
   font-size: 50px;
   text-align: center;
-  background-image: linear-gradient(45deg, #330808, rgba(233, 86, 7, 0.7));
+  background-image: linear-gradient(90deg, rgba(39, 39, 39, 0.8), rgba(233, 86, 7, 0.85));
 }
 
 .main-reco h2 {
@@ -207,7 +235,7 @@ body {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 .main-reco img {
-  width: 100%;
+  width: 50%;
   height: auto;
   margin: 5px;
 }
@@ -335,7 +363,7 @@ body {
 .service-conteiner p {
   font-size: 20px;
   line-height: 35px;
-  font-weight: 400;
+  font-weight: bold;
 }
 
 .tittle-service {
@@ -618,7 +646,7 @@ body {
   text-align: center;
 }
 .btn-ubic:hover {
-  background-image: linear-gradient(45deg, #330808, rgba(233, 86, 7, 0.7));
+  background-image: linear-gradient(90deg, rgba(39, 39, 39, 0.8), rgba(233, 86, 7, 0.85));
   box-shadow: 0 0 10px rgb(246, 246, 246), 0 0 20px rgb(219, 136, 47), 0 0 50px rgb(246, 164, 31);
   color: rgb(250, 250, 250);
 }
@@ -793,6 +821,17 @@ input[type=number]::-webkit-outer-spin-button {
   .contact-form {
     width: 80%;
   }
+}
+.error-404-container p {
+  text-align: center;
+}
+
+.btn-404-gral {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  margin-bottom: 20%;
 }
 
 /*# sourceMappingURL=main.css.map */
