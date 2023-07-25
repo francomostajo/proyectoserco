@@ -5,3 +5,4 @@
 node_modules/
 fuentes/
 envio.php
+*.vscode

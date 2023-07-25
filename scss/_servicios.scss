@@ -18,9 +18,9 @@
         grid-area: tittle;
     }
     h2{
-        color: $color-text-black;
+        color: $color-principal;
         text-align: center;
-        text-shadow: 1px 1px $text-shadow-black;
+        text-shadow: 1px 1px $color-text-white;
         font-size: 40px;
         letter-spacing: 2px;
         font-weight: $text-weight-bold; 
@@ -35,6 +35,16 @@
     p{
         font-size: 20px;
         line-height: 35px;
+        font-weight: $text-weight-bold;
+        padding-left: 20px;
+    }
+    img {
+        display: flex;
+        border-radius: 13px;
+        align-items: center;
+        justify-content: center;
+    }
+    ul{
         font-weight: $text-weight-bold;
     }
 }
@@ -122,23 +132,42 @@
 
 
 @media (width < 800px){
-    .service-conteiner h1 {
-        font-size: 30px;
+    .service-conteiner{
+        .service-1{
+            flex-direction: column-reverse ;
+        } 
+        .service-2{
+            flex-direction: column-reverse ;
+        } 
+        .service-3{
+            flex-direction: column-reverse ;
+        }
+        .service-4{
+            flex-direction: column-reverse ;
+        }
+        .service-5{
+            flex-direction: column-reverse ;
+        }
     }
-}@media (width < 600px){
+}
+@media (width < 600px){
     .service-conteiner { 
         h1 {
-        font-size: 25px;
         margin-top: 96.34px;
         } 
         h2{
-            font-size: 20px;
+            font-size: 30px;
+            margin-top: 20px;
         } 
         h3{
-            font-size: 20px;
+            font-size: 25px;
         } 
         p{
-            font-size: 15px;            
+            font-size: 18px;            
+        }
+        ul li{
+            font-size: 18px;
+            padding: 5px;
         }
         .service-1{
             flex-direction: column-reverse ;
@@ -156,4 +185,29 @@
             flex-direction: column-reverse ;
         }
     }
+    }
+    @media (width < 400px) {
+        .service-conteiner{
+            h1 {
+                margin-top: 96.34px;
+                font-size: 40px;
+            } 
+            h2{
+                    font-size: 25px;
+            } 
+            h3{
+                    font-size: 20px;
+            } 
+            p{
+                    font-size: 13px;            
+            }
+            ul li{
+                font-size: 13px;
+                padding: 5px;
+            }
+            img{
+                width: 150px;
+                height: 150px;
+            }
+        }
     }
