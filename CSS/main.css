@@ -235,10 +235,11 @@ body {
   font-size: 35px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
-.main-reco img {
-  width: 90%;
-  height: auto;
-  margin: 5px;
+.main-reco .img-opinion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
 }
 
 .main-container .main-btn {
@@ -326,6 +327,9 @@ body {
     padding: 15px;
     font-size: 25px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  }
+  .main-reco img {
+    width: 100%;
   }
 }
 .service-conteiner {
