@@ -10,7 +10,7 @@
     flex-direction: column;
     gap: 10px;
     background-image: linear-gradient(45deg, #330808, 
-    #3a2c09);
+    #1f1601);
     border-radius: 2.5em;
     padding: 50px;
     width: 70%;
@@ -19,6 +19,7 @@
     margin-bottom: 5%;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 5px 5px 20px $color-text-black;
     &::before{
         content: '';
         background-image: linear-gradient(45deg, #ff0000, 
@@ -79,7 +80,6 @@
         color: rgb(155, 114, 91);  
     }
 }
-//sacar boton de incremento y decremento en input number
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;

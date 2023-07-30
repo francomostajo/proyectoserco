@@ -55,6 +55,11 @@
 }
 
 @media (width < 380px) {
+    .container-serco{
+        h1{
+            font-size: 25px;
+        }
+    }
     .history-serco{
         display: flex;
         margin: 0%;

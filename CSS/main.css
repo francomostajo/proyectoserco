@@ -13,10 +13,13 @@ body {
 
 .tittle-general, .error-404-container h1, .contact-form-main h1, .sucursales h1, .container-serco h1, .service-conteiner h1 {
   margin-top: 96.34px;
-  background-image: linear-gradient(90deg, rgba(39, 39, 39, 0.8), rgba(233, 86, 7, 0.85));
+  background-image: linear-gradient(180deg, rgba(39, 39, 39, 0.8), rgba(233, 86, 7, 0.85));
   text-align: center;
   font-size: 60px;
+  padding-bottom: 10px;
   color: rgb(250, 250, 250);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), 50% 100%, 0 calc(100% - 50px));
+  padding-bottom: 35px;
 }
 
 .p-general, .error-404-container p {
@@ -42,9 +45,23 @@ body {
   text-align: center;
 }
 .btn-general:hover, .btn-404-gral .btn-404:hover {
-  background-image: linear-gradient(90deg, rgba(39, 39, 39, 0.8), rgba(233, 86, 7, 0.85));
+  background-image: linear-gradient(180deg, rgba(39, 39, 39, 0.8), rgba(233, 86, 7, 0.85));
   box-shadow: 0 0 10px rgb(246, 246, 246), 0 0 20px rgb(219, 136, 47), 0 0 50px rgb(246, 164, 31);
   color: rgb(250, 250, 250);
+}
+
+.efect-service, .service-5, .service-4, .service-3, .service-2, .service-1 {
+  background-color: rgba(39, 39, 39, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 1px 1px 20px black;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  border-radius: 13px;
+  margin: 25px;
+  padding: 20px;
+  place-items: center;
 }
 
 .nav-container {
@@ -106,7 +123,8 @@ body {
   flex-wrap: wrap;
   background-color: rgba(39, 39, 39, 0.8);
   padding: 0;
-  margin: 0;
+  clip-path: polygon(0 0, 50% 50px, 100% 0, 100% 100%, 0 100%);
+  padding-top: 35px;
 }
 
 .foot-menu ul {
@@ -176,11 +194,18 @@ body {
 
 .title {
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
   background-color: rgba(74, 74, 74, 0.5);
   color: rgb(250, 250, 250);
   padding: 15px;
   font-size: 35px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), 50% 100%, 0 calc(100% - 50px));
+  padding-top: 0px;
+  padding-bottom: 50px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .title span {
   display: block;
@@ -214,8 +239,8 @@ body {
   font-size: 20px;
   display: flex;
   justify-content: center;
-  color: rgb(8, 8, 8);
-  text-shadow: 0 0 8px rgba(155, 150, 150, 0.8);
+  color: rgb(233, 86, 7);
+  text-shadow: 0 0 8px rgb(8, 8, 8);
   margin: 10%;
 }
 
@@ -224,7 +249,7 @@ body {
   margin-top: 15px;
   font-size: 25px;
   text-align: center;
-  background-image: linear-gradient(90deg, rgba(39, 39, 39, 0.8), rgba(233, 86, 7, 0.85));
+  background-image: linear-gradient(180deg, rgba(233, 86, 7, 0.85), rgba(39, 39, 39, 0.8));
 }
 
 .main-reco h2 {
@@ -234,6 +259,11 @@ body {
   padding: 15px;
   font-size: 35px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), 50% 100%, 0 calc(100% - 50px));
+  padding-top: 0px;
+  padding-bottom: 50px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .main-reco .img-opinion {
   display: flex;
@@ -291,6 +321,7 @@ body {
     text-align: center;
     padding: 15px;
     font-size: 20px;
+    padding-bottom: 50px;
   }
   .title span {
     display: block;
@@ -327,6 +358,7 @@ body {
     padding: 15px;
     font-size: 25px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    padding-bottom: 50px;
   }
   .main-reco img {
     width: 100%;
@@ -379,32 +411,11 @@ body {
 }
 
 .service-1 {
-  background-color: rgba(39, 39, 39, 0.3);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  box-shadow: 1px 1px 20px black;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
-  border-radius: 13px;
-  margin: 25px;
-  padding: 20px;
-  place-items: center;
   grid-area: service1;
 }
 
 .service-2 {
-  background-color: rgba(39, 39, 39, 0.3);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  box-shadow: 1px 1px 20px black;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
-  border-radius: 13px;
-  margin: 25px;
-  padding: 20px;
-  place-items: center;
+  flex-direction: row;
   grid-area: service2;
 }
 .service-2 li {
@@ -412,47 +423,15 @@ body {
 }
 
 .service-3 {
-  background-color: rgba(39, 39, 39, 0.3);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  box-shadow: 1px 1px 20px black;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
-  border-radius: 13px;
-  margin: 25px;
-  padding: 20px;
-  place-items: center;
   grid-area: service3;
 }
 
 .service-4 {
-  background-color: rgba(39, 39, 39, 0.3);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  box-shadow: 1px 1px 20px black;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
-  border-radius: 13px;
-  margin: 25px;
-  padding: 20px;
-  place-items: center;
+  flex-direction: row;
   grid-area: service4;
 }
 
 .service-5 {
-  background-color: rgba(39, 39, 39, 0.3);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  box-shadow: 1px 1px 20px black;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
-  border-radius: 13px;
-  margin: 25px;
-  padding: 20px;
-  place-items: center;
   grid-area: service5;
 }
 
@@ -510,7 +489,8 @@ body {
 @media (width < 400px) {
   .service-conteiner h1 {
     margin-top: 96.34px;
-    font-size: 40px;
+    font-size: 25px;
+    padding-bottom: 30px;
   }
   .service-conteiner h2 {
     font-size: 25px;
@@ -578,6 +558,9 @@ body {
   }
 }
 @media (width < 380px) {
+  .container-serco h1 {
+    font-size: 25px;
+  }
   .history-serco {
     display: flex;
     margin: 0%;
@@ -694,7 +677,7 @@ body {
   text-align: center;
 }
 .btn-ubic:hover {
-  background-image: linear-gradient(90deg, rgba(39, 39, 39, 0.8), rgba(233, 86, 7, 0.85));
+  background-image: linear-gradient(180deg, rgba(39, 39, 39, 0.8), rgba(233, 86, 7, 0.85));
   box-shadow: 0 0 10px rgb(246, 246, 246), 0 0 20px rgb(219, 136, 47), 0 0 50px rgb(246, 164, 31);
   color: rgb(250, 250, 250);
 }
@@ -766,7 +749,7 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 10px;
-  background-image: linear-gradient(45deg, #330808, #3a2c09);
+  background-image: linear-gradient(45deg, #330808, #1f1601);
   border-radius: 2.5em;
   padding: 50px;
   width: 70%;
@@ -775,6 +758,7 @@ body {
   margin-bottom: 5%;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 5px 5px 20px rgb(8, 8, 8);
 }
 .contact-form::before {
   content: "";

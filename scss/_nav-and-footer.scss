@@ -4,7 +4,7 @@
     left: 0;
     background-color: $color-footer-background;
     width: 100%;
-    z-index: 99;   
+    z-index: 99;  
 }
 .nav-logo{
     margin: 0 0 0 20px;
@@ -59,7 +59,8 @@
     flex-wrap: wrap;
     background-color: $color-footer-background;
     padding: 0;
-    margin: 0;
+    clip-path: polygon(0 0,50% 50px,100% 0,100% 100%,0 100%);
+    padding-top: 35px;
 }
   
 .foot-menu {
