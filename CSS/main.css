@@ -64,29 +64,6 @@ body {
   place-items: center;
 }
 
-.background-tittle-secundary {
-  padding: 45px;
-  position: relative;
-  --mask:
-      radial-gradient(35px at 35px 35px,#0000 calc(98% - 5px),#000 calc(100% - 5px) 98%,#0000) -35px -35px,
-      linear-gradient(90deg,#000 10px,#0000 0) -5px 50% /100% calc(100% - 70px + 5px) repeat-x,
-      linear-gradient( #000 10px,#0000 0) 50% -5px/calc(100% - 70px + 5px) 100% repeat-y;
-}
-.background-tittle-secundary:before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgb(233, 86, 7);
-  -webkit-mask: var(--mask);
-  mask: var(--mask);
-}
-
-.background-description {
-  --mask: radial-gradient(20px at 20px 20px,#0000 98%,#000) -20px -20px;
-  -webkit-mask: var(--mask);
-  mask: var(--mask);
-}
-
 .nav-container {
   position: fixed;
   top: 0;
@@ -229,7 +206,7 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
   color: rgb(8, 8, 8);
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   padding: 55px;
   position: relative;
@@ -287,7 +264,7 @@ body {
   color: rgba(39, 39, 39, 0.93);
   margin-top: 30px;
   margin-bottom: 30px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   text-align: center;
   padding: 15px;
@@ -411,7 +388,7 @@ body {
   .main-text-description {
     margin-top: 10px;
     padding: 20px;
-    font-size: 25px;
+    font-size: 20px;
   }
   .main-reco h2 {
     text-align: start;
@@ -429,9 +406,9 @@ body {
 .service-conteiner {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "tittle" "description" "service1" "service2" "service3" "service4" "service5";
+  grid-template-areas: "tittle tittle tittle" "description description description" "service12 service12 service12" "service3 service4 service5";
 }
 
 .service-conteiner h1 {
@@ -488,6 +465,10 @@ body {
   grid-area: description;
 }
 
+.service-1-2 {
+  grid-area: service12;
+}
+
 .service-1 {
   grid-area: service1;
 }
@@ -502,18 +483,27 @@ body {
 
 .service-3 {
   grid-area: service3;
+  flex-direction: column-reverse;
 }
 
 .service-4 {
-  flex-direction: row;
+  flex-direction: column-reverse;
   grid-area: service4;
 }
 
 .service-5 {
+  flex-direction: column-reverse;
   grid-area: service5;
 }
 
 @media (width < 800px) {
+  .service-conteiner {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "tittle" "description" "service12" "service3" "service4" "service5";
+  }
   .service-conteiner .service-1 {
     flex-direction: column-reverse;
   }

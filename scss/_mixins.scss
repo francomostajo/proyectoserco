@@ -49,28 +49,6 @@
     place-items: center;
 }
 
-.background-tittle-secundary{
-    padding: 45px;
-    position: relative;
-    --mask:
-        radial-gradient(35px at 35px 35px,#0000 calc(98% - 5px),#000 calc(100% - 5px) 98%,#0000) -35px -35px,
-        linear-gradient(90deg,#000 10px,#0000 0) -5px 50% /100% calc(100% - 70px + 5px) repeat-x,
-        linear-gradient(      #000 10px,#0000 0) 50% -5px/calc(100% - 70px + 5px) 100% repeat-y;
-    &:before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: $color-principal;
-        -webkit-mask: var(--mask);
-                mask: var(--mask);
-      }
-}
-.background-description{
-    --mask: radial-gradient(20px at 20px 20px,#0000 98%,#000) -20px -20px;
-    -webkit-mask: var(--mask);
-            mask: var(--mask);
-}
-
 //mixins
 @mixin efectup ($top,$bottom,$left,$right)
 {

@@ -1,16 +1,13 @@
 .service-conteiner {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-    "tittle"
-    "description"
-    "service1"
-    "service2"
-    "service3"
-    "service4"
-    "service5";
+    "tittle tittle tittle"
+    "description description description"
+    "service12 service12 service12"
+    "service3 service4 service5";
 }
 .service-conteiner {
     h1{
@@ -54,9 +51,12 @@
 .tittle-service {
     grid-area: description;
 } 
+.service-1-2{
+    grid-area: service12;  
+}
 .service-1 {
     @extend .efect-service;
-    grid-area: service1; 
+    grid-area: service1;
 }
 .service-2 {
     @extend .efect-service;
@@ -70,24 +70,38 @@
 .service-3 {
     @extend .efect-service;
     grid-area: service3;
+    flex-direction: column-reverse;
 }
   
 .service-4 {
     @extend .efect-service;
-    flex-direction: row;
+    flex-direction: column-reverse;
     grid-area: service4;
 
 }
   
 .service-5 {
     @extend .efect-service;
+    flex-direction: column-reverse;
     grid-area: service5; 
 
 }
 
 
 @media (width < 800px){
+
     .service-conteiner{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "tittle"
+        "description"
+        "service12"
+        "service3"
+        "service4"
+        "service5";
         .service-1{
             flex-direction: column-reverse ;
         } 
