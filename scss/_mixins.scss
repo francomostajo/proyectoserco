@@ -39,7 +39,7 @@
     background-color: rgba(39, 39, 39, 0.3);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    box-shadow: 1px 1px 20px black;
+    box-shadow: 1px 1px 20px $color-text-black;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
@@ -47,6 +47,28 @@
     margin: 25px;
     padding: 20px;
     place-items: center;
+}
+
+.background-tittle-secundary{
+    padding: 45px;
+    position: relative;
+    --mask:
+        radial-gradient(35px at 35px 35px,#0000 calc(98% - 5px),#000 calc(100% - 5px) 98%,#0000) -35px -35px,
+        linear-gradient(90deg,#000 10px,#0000 0) -5px 50% /100% calc(100% - 70px + 5px) repeat-x,
+        linear-gradient(      #000 10px,#0000 0) 50% -5px/calc(100% - 70px + 5px) 100% repeat-y;
+    &:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: $color-principal;
+        -webkit-mask: var(--mask);
+                mask: var(--mask);
+      }
+}
+.background-description{
+    --mask: radial-gradient(20px at 20px 20px,#0000 98%,#000) -20px -20px;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
 }
 
 //mixins
@@ -57,4 +79,22 @@
     padding-bottom: $bottom;
     padding-left: $left;
     padding-right: $right;
+}
+
+@mixin background-tittle-secundary ($pad)
+{
+    padding: $pad;
+    position: relative;
+    --mask:
+        radial-gradient(35px at 35px 35px,#0000 calc(98% - 5px),#000 calc(100% - 5px) 98%,#0000) -35px -35px,
+        linear-gradient(90deg,#000 10px,#0000 0) -5px 50% /100% calc(100% - 70px + 5px) repeat-x,
+        linear-gradient(      #000 10px,#0000 0) 50% -5px/calc(100% - 70px + 5px) 100% repeat-y;
+    &:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: $color-principal;
+        -webkit-mask: var(--mask);
+                mask: var(--mask);
+      }
 }

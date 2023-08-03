@@ -17,6 +17,9 @@
         @extend .tittle-general;
         grid-area: tittle;
     }
+    .tittle-service{
+        @include background-tittle-secundary(15px);
+    }
     h2{
         color: $color-principal;
         text-align: center;
