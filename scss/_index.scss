@@ -1,11 +1,10 @@
 .gif-serco {
-    margin-top: 96.34px;
     width: 100%;
 } 
 .title{
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 10px; 
+    margin-bottom: 20px; 
     background-color: rgba(74, 74, 74, 0.5); 
     color: $color-text-white;
     padding: 15px;
@@ -15,7 +14,8 @@
         display: block;
         margin: 10px 0 0 15px;
     }
-    @include efectup(0px,50px,0px,0px); 
+    clip-path: polygon(0 50px,50% 0,100% 50px,100% 100%,0 100%);
+    padding-top: 40px;
 }
 .main-container{
     display: flex;
@@ -129,6 +129,10 @@
 
 //RESPONSIVE
 @media (width <750px) {
+    .gif-serco {
+        margin-top: 96.34px;
+        width: 100%;
+    } 
     .title{
         text-align: center;
         padding: 15px;
@@ -137,7 +141,7 @@
             display: block;
             margin: 10px 0 0 15px;
         }
-        padding-bottom: 50px;
+        padding-top: 50px;
     }
     .main-container{
         margin: 10px;

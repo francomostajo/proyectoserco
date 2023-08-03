@@ -6,10 +6,17 @@
     width: 100%;
     z-index: 99;  
 }
+.navbar-toggler{
+    color: $color-principal;
+}
 .nav-logo{
     margin: 0 0 0 20px;
     img {
         width: 120px;
+        &:hover{
+            transform: scale(1.15);
+            letter-spacing: 0.5px;
+        }
     }
 }
 .nav-menu{
@@ -43,7 +50,9 @@
             max-width: auto;
             text-align: center;
             &:hover{
-                background-color: $color-text-white;    
+                background-color: $color-text-white;
+                color: $color-principal;
+                transform: scale(1.15);
             }  
         }
     }
@@ -85,7 +94,7 @@
                     color: $color-principal;
                     transform: scale(1.15);
                     letter-spacing: 1.5px;
-                } 
+                }
             }
         }
     }
@@ -105,17 +114,15 @@
     margin: 15px;
     justify-content: center;
     a{
-        svg{
+        svg{  
             color: $color-principal;
             margin: 10px;
             width: 40px;
             height: 40px;
             margin-bottom: 25px;
+            }
         }
     }
-  }
-  
-
   //RESPONSIVE 
   @media (width < 700px){
     .foot-menu ul {
