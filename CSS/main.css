@@ -18,8 +18,6 @@ body {
   font-size: 60px;
   padding-bottom: 10px;
   color: rgb(250, 250, 250);
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), 50% 100%, 0 calc(100% - 50px));
-  padding-bottom: 35px;
 }
 
 .p-general, .error-404-container p {
@@ -29,7 +27,7 @@ body {
   font-weight: bold;
 }
 
-.btn-general, .btn-404-gral .btn-404 {
+.btn-general, .btn-404-gral .btn-404, .btn-ubic {
   padding: 15px 30px;
   background-color: rgba(39, 39, 39, 0.93);
   border: none;
@@ -44,13 +42,13 @@ body {
   display: block;
   text-align: center;
 }
-.btn-general:hover, .btn-404-gral .btn-404:hover {
+.btn-general:hover, .btn-404-gral .btn-404:hover, .btn-ubic:hover {
   background-image: linear-gradient(180deg, rgba(39, 39, 39, 0.95), rgba(233, 86, 7, 0.85));
   box-shadow: 0 0 10px rgb(246, 246, 246), 0 0 20px rgb(219, 136, 47), 0 0 50px rgb(246, 164, 31);
   color: rgb(250, 250, 250);
 }
 
-.efect-service, .service-5, .service-4, .service-3, .service-2, .service-1 {
+.efect-service, .sucursales .sucursal-3, .sucursales .sucursal-2, .sucursales .sucursal-1, .service-5, .service-4, .service-3, .service-2, .service-1 {
   background-color: rgba(39, 39, 39, 0.3);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -62,10 +60,6 @@ body {
   margin: 25px;
   padding: 20px;
   place-items: center;
-}
-
-.navbar-toggler {
-  background-color: rgb(233, 86, 7);
 }
 
 .navbar-toggler {
@@ -423,6 +417,11 @@ body {
 }
 
 .service-conteiner h1 {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), 50% 100%, 0 calc(100% - 50px));
+  padding-top: 0px;
+  padding-bottom: 35px;
+  padding-left: 0px;
+  padding-right: 0px;
   grid-area: tittle;
 }
 .service-conteiner .tittle-service {
@@ -590,6 +589,14 @@ body {
     height: 150px;
   }
 }
+.container-serco h1 {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), 50% 100%, 0 calc(100% - 50px));
+  padding-top: 0px;
+  padding-bottom: 35px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .history-serco {
   margin: 15px;
 }
@@ -681,6 +688,13 @@ body {
   grid-template-rows: auto;
   grid-template-areas: "title" "sucu1" "sucu2" "sucu3";
 }
+.sucursales h1 {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), 50% 100%, 0 calc(100% - 50px));
+  padding-top: 0px;
+  padding-bottom: 35px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
 .sucursales h2 {
   color: rgb(8, 8, 8);
   text-align: center;
@@ -699,66 +713,18 @@ body {
   margin-bottom: 40px;
 }
 .sucursales .sucursal-1 {
-  background-color: rgba(39, 39, 39, 0.3);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  box-shadow: 1px 1px 20px black;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
-  border-radius: 13px;
-  margin: 25px;
-  padding: 20px;
-  place-items: center;
   grid-area: sucu1;
 }
 .sucursales .sucursal-2 {
-  background-color: rgba(39, 39, 39, 0.3);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  box-shadow: 1px 1px 20px black;
-  display: flex;
-  justify-content: space-evenly;
-  border-radius: 13px;
-  margin: 25px;
-  padding: 20px;
-  place-items: center;
+  flex-direction: row;
   grid-area: sucu2;
 }
 .sucursales .sucursal-3 {
-  background-color: rgba(39, 39, 39, 0.3);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  box-shadow: 1px 1px 20px black;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
-  place-items: center;
-  border-radius: 13px;
-  margin: 25px;
-  padding: 20px;
   grid-area: sucu3;
 }
 
 .btn-ubic {
-  padding: 15px 30px;
-  background-color: rgba(39, 39, 39, 0.93);
-  border: none;
-  text-decoration: none;
-  margin: auto;
-  cursor: pointer;
-  border-radius: 28px;
   width: 50%;
-  transition: 0s;
-  color: rgb(250, 250, 250);
-  letter-spacing: 1px;
-  display: block;
-  text-align: center;
-}
-.btn-ubic:hover {
-  background-image: linear-gradient(180deg, rgba(39, 39, 39, 0.95), rgba(233, 86, 7, 0.85));
-  box-shadow: 0 0 10px rgb(246, 246, 246), 0 0 20px rgb(219, 136, 47), 0 0 50px rgb(246, 164, 31);
-  color: rgb(250, 250, 250);
 }
 
 @media (width < 700px) {
@@ -823,6 +789,14 @@ body {
 .contact-form-main {
   margin-top: 96.34px;
 }
+.contact-form-main h1 {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), 50% 100%, 0 calc(100% - 50px));
+  padding-top: 0px;
+  padding-bottom: 35px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .contact-form {
   display: flex;
   align-items: center;

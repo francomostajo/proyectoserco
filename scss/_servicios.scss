@@ -12,6 +12,7 @@
 .service-conteiner {
     h1{
         @extend .tittle-general;
+        @include efectup(0px,35px,0px,0px);
         grid-area: tittle;
     }
     .tittle-service{

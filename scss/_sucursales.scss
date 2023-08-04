@@ -8,7 +8,8 @@
             "sucu2"
             "sucu3";
         h1{
-                @extend .tittle-general;
+            @extend .tittle-general;
+            @include efectup(0px,35px,0px,0px);
         }
         h2{
             color: $color-text-black;
@@ -28,69 +29,24 @@
             margin-bottom: 40px;
         }
         .sucursal-1 {
-            background-color: rgb(39, 39, 39, 0.3);
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
-            box-shadow: 1px 1px 20px black;
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-evenly;
-            border-radius: 13px;
-            margin: 25px;
-            padding: 20px;
-            place-items: center;
+            @extend .efect-service;
             grid-area: sucu1;
         }
         .sucursal-2{
-            background-color: rgba(39, 39, 39, 0.3);
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
-            box-shadow: 1px 1px 20px black;
-            display: flex;
-            justify-content: space-evenly;
-            border-radius: 13px;
-            margin: 25px;
-            padding: 20px;
-            place-items: center;
+            @extend .efect-service;
+            flex-direction: row;
             grid-area: sucu2;
         }
         .sucursal-3{
-            background-color: rgb(39, 39, 39, 0.3);
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
-            box-shadow: 1px 1px 20px black;
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-evenly;
-            place-items: center;
-            border-radius: 13px;
-            margin: 25px;
-            padding: 20px;
+            @extend .efect-service;
             grid-area: sucu3;
         }  
     }
 //Button Sucursales
 .btn-ubic {
-    padding: 15px 30px;
-    background-color: $color-footer-background;
-    border: none;
-    text-decoration: none;
-    margin: auto;
-    cursor: pointer;
-    border-radius: 28px;
+    @extend .btn-general;
     width: 50%;
-    transition: 0s;
-    color: $color-text-white;
-    letter-spacing: 1px;
-    display: block;
-    text-align: center;
-    &:hover {
-        background-image: $background-tittles;
-        box-shadow: 0 0 10px rgb(246, 246, 246), 0 0 20px rgb(219, 136, 47), 0 0 50px rgb(246, 164, 31);
-        color: $color-text-white;
-    }
 }
-
 
 //RESPONSIVE 
 @media (width < 700px){
@@ -129,8 +85,8 @@
 @media (width < 400px){
 .sucursales{ 
     h1 {
-    font-size: 25px;
-    margin-top: 96.34px;
+        font-size: 25px;
+        margin-top: 96.34px;
     } 
     h2{
         font-size: 35px;
