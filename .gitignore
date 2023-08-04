@@ -1,5 +1,4 @@
 *.ia
-*.map
 *.vscode
 *.log
 node_modules/
