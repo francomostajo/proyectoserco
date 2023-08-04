@@ -62,12 +62,10 @@ body {
   place-items: center;
 }
 
-.navbar-toggler {
+#button-toggler {
   background-color: rgb(233, 86, 7);
-}
-
-.navbar-toggler-icon {
-  color: rgb(233, 86, 7);
+  border-color: rgb(233, 86, 7);
+  color: rgb(250, 250, 250);
 }
 
 .nav-container {

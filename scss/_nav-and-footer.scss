@@ -1,8 +1,7 @@
-.navbar-toggler{
+#button-toggler {
     background-color: $color-principal;
-}
-.navbar-toggler-icon{
-    color: $color-principal;
+    border-color: $color-principal; 
+    color: $color-text-white; 
 }
 .nav-container{
     position: fixed;
