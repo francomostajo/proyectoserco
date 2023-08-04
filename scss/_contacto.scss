@@ -113,9 +113,9 @@ input[type="number"]::-webkit-outer-spin-button {
 
 
 //RESPONSIVE 
-@media (width < 500px){
+@media (width < 700px){
     .contact-form-main h1 {
-        font-size: 30px;
+        font-size: 35px;
     }
     .contact-form {
         width: 80%;  

@@ -39,6 +39,11 @@
 
 //RESPONSIVE
 @media (width < 850px) {
+    .container-serco{
+        h1{
+            font-size: 35px;
+        }
+    }
     .history-serco{
         img{
             width: 150px;

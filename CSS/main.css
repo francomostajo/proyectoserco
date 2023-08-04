@@ -534,6 +534,7 @@ body {
 @media (width < 600px) {
   .service-conteiner h1 {
     margin-top: 96.34px;
+    font-size: 35px;
   }
   .service-conteiner h2 {
     font-size: 30px;
@@ -624,6 +625,9 @@ body {
 }
 
 @media (width < 850px) {
+  .container-serco h1 {
+    font-size: 35px;
+  }
   .history-serco img {
     width: 150px;
     height: 150px;
@@ -928,9 +932,9 @@ input[type=number]::-webkit-outer-spin-button {
   color: rgb(233, 86, 7);
 }
 
-@media (width < 500px) {
+@media (width < 700px) {
   .contact-form-main h1 {
-    font-size: 30px;
+    font-size: 35px;
   }
   .contact-form {
     width: 80%;
