@@ -64,6 +64,18 @@ body {
   place-items: center;
 }
 
+.navbar-toggler {
+  background-color: rgb(233, 86, 7);
+}
+
+.navbar-toggler {
+  background-color: rgb(233, 86, 7);
+}
+
+.navbar-toggler-icon {
+  color: rgb(233, 86, 7);
+}
+
 .nav-container {
   position: fixed;
   top: 0;
@@ -71,10 +83,6 @@ body {
   background-color: rgba(39, 39, 39, 0.93);
   width: 100%;
   z-index: 99;
-}
-
-.navbar-toggler {
-  color: rgb(233, 86, 7);
 }
 
 .nav-logo {
@@ -186,6 +194,9 @@ body {
 }
 
 @media (width < 700px) {
+  .navbar-toggler {
+    background-color: rgb(233, 86, 7);
+  }
   .foot-menu ul {
     flex-direction: column;
   }

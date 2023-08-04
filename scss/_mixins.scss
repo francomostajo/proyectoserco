@@ -48,7 +48,9 @@
     padding: 20px;
     place-items: center;
 }
-
+.navbar-toggler {
+    background-color: $color-principal;
+}
 //mixins
 @mixin efectup ($top,$bottom,$left,$right)
 {

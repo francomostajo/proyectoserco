@@ -1,3 +1,9 @@
+.navbar-toggler{
+    background-color: $color-principal;
+}
+.navbar-toggler-icon{
+    color: $color-principal;
+}
 .nav-container{
     position: fixed;
     top: 0;
@@ -5,9 +11,6 @@
     background-color: $color-footer-background;
     width: 100%;
     z-index: 99;  
-}
-.navbar-toggler{
-    color: $color-principal;
 }
 .nav-logo{
     margin: 0 0 0 20px;
@@ -125,6 +128,9 @@
     }
   //RESPONSIVE 
   @media (width < 700px){
+    .navbar-toggler {
+        background-color: $color-principal;
+    }
     .foot-menu ul {
         flex-direction: column;
     }
