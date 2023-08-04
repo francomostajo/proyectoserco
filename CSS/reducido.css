@@ -247,11 +247,6 @@ button {
   cursor: pointer;
 }
 
-button,
-[type=button],
-[type=submit] {
-  -webkit-appearance: button;
-}
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=submit]:not(:disabled) {
@@ -277,10 +272,6 @@ button:not(:disabled),
   height: auto;
 }
 
-[type=search] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px;
-}
 
 /* rtl:raw:
 [type="tel"],
@@ -296,11 +287,6 @@ button:not(:disabled),
 
 ::-webkit-color-swatch-wrapper {
   padding: 0;
-}
-
-::file-selector-button {
-  font: inherit;
-  -webkit-appearance: button;
 }
 
 .container,
