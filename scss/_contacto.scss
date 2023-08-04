@@ -48,15 +48,18 @@
     overflow: hidden;
     transition: all 0.2s;
     cursor: pointer;
+    text-decoration: none;
     &:hover { 
         border: 2px solid $color-principal;
         background: $color-text-black;
         color: $color-principal;
+        text-decoration: none;
     }
     &:active{
         border: 2px solid #66da4300;
         background: $color-principal;
         color: $color-text-black;
+        text-decoration: none;
     }
 }
 
