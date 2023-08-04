@@ -1,5 +1,3 @@
-*.ia
 *.vscode
-*.log
 node_modules/
-fuentes/
+
