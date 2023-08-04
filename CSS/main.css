@@ -591,7 +591,6 @@ body {
   }
 }
 .history-serco {
-  display: flex;
   margin: 15px;
 }
 .history-serco p {
@@ -603,6 +602,8 @@ body {
 .history-serco img {
   width: 200px;
   height: 200px;
+  float: right;
+  margin: 10px;
 }
 
 .container-serco-carousel-aside {
@@ -628,37 +629,32 @@ body {
   .container-serco h1 {
     font-size: 35px;
   }
+  .history-serco p {
+    text-align: center;
+  }
   .history-serco img {
     width: 150px;
     height: 150px;
+    margin: 10px;
   }
   .container-serco-carousel-aside {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .container-serco-carousel-aside aside {
     width: 100%;
-    margin-top: -45px;
+    margin-top: 30px;
   }
 }
 @media (width < 380px) {
   .container-serco h1 {
     font-size: 25px;
   }
-  .history-serco {
-    display: flex;
-    margin: 0%;
-  }
   .history-serco p {
     margin-left: -5px;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 35px;
     font-weight: bold;
-    width: 100%;
-  }
-  .history-serco img {
-    margin-left: -15px;
-    width: 100px;
-    height: 100px;
+    text-align: center;
   }
   .container-serco-carousel-aside {
     display: flex;
@@ -672,8 +668,8 @@ body {
   }
   .container-serco-carousel-aside aside {
     width: 100%;
-    padding-top: 30%;
-    font-size: 20px;
+    padding-top: 10px;
+    font-size: 15px;
     line-height: 35px;
     font-weight: bold;
     text-align: center;
